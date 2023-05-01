@@ -1,5 +1,12 @@
 import random
 
+def noDuplicates(num):
+    num_li = getDigits(num)
+    if len(num_li) == len(set(num_li)):
+        return True
+    else:
+        return False
+
 def numOfBullsCows(num,guess):
     bull_cow = [0,0]
     num_li = getDigits(num)
@@ -13,3 +20,4 @@ def numOfBullsCows(num,guess):
                 bull_cow[1] += 1
     # bull_cow return값 지정
     return bull_cow
+
