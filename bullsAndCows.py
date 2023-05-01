@@ -1,5 +1,7 @@
 import random
 
 def generateNum():
-    num = random.randint(1000,9999)
-    return num
+    while True:
+        num = random.randint(1000,9999)
+        if noDuplicates(num):
+            return num
