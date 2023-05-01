@@ -11,5 +11,5 @@ def numOfBullsCows(num,guess):
                 bull_cow[0] += 1
             else:
                 bull_cow[1] += 1
-
+    # bull_cow return값 지정
     return bull_cow
