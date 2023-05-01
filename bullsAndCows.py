@@ -1,5 +1,11 @@
 import random
 
+# Returns list of digits
+# of a number
+
+def getDigits(num):
+    return [int(i) for i in str(num)]
+
 def noDuplicates(num):
     num_li = getDigits(num)
     if len(num_li) == len(set(num_li)):
@@ -20,4 +26,3 @@ def numOfBullsCows(num,guess):
                 bull_cow[1] += 1
     # bull_cow return값 지정
     return bull_cow
-
